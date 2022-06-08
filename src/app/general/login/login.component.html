@@ -1,0 +1,43 @@
+<br><br><div class="container">
+    <div class="row">
+<div class="col-lg-3"></div>
+<div class="col-lg-6">
+
+    <mat-card class="example-card" align="center" >
+    
+        <mat-card-title>LOGIN</mat-card-title>
+        <mat-card-content>
+
+            <form (ngSubmit)="fncreat()" method="post"  align="center">
+
+                <input class="form-control" type="text" placeholder="username" name="userName" aria-label="default input example"  [(ngModel)]=" logins.userName"><br><br>
+                <input class="form-control" type="password" placeholder="password" name="userPassword" aria-label="default input example" [(ngModel)]=" logins.userPassword"> <br><br>
+                
+                <button mat-raised-button color="primary" (click)="fndata()"  >LOGIN</button><br><br>
+               <P>{{err}}</P>
+                <a routerLink="/forgot"> 
+                    <label style="color: blue;">forgot password?</label></a>
+                <br>
+                <a routerLink="/create">  
+                <label  style="color: blue;" >create an account?</label> </a>
+            </form>
+          
+
+    
+    
+    
+        </mat-card-content>
+    </mat-card>
+    
+</div>
+<div class="col-lg-3"></div>
+
+
+
+
+    </div>
+</div>
+
+
+      
+

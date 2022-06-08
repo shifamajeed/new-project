@@ -1,0 +1,32 @@
+<button mat-button [matMenuTriggerFor]="belowMenu">Electronics</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item>Mobile & ccessories</button>
+  <button mat-menu-item>Laptop </button>
+  <button mat-menu-item>Speaker</button>
+  <button mat-menu-item>Camera</button>
+  <button mat-menu-item>Gaming & Accessories</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Television</button>
+  <button mat-menu-item>Washing Machine</button>
+  <button mat-menu-item>Refrigerotrs</button>
+  <button mat-menu-item>Kitchen Appliances</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="beforeMenu">Sport</button>
+<mat-menu #beforeMenu="matMenu" xPosition="after">
+  <button mat-menu-item>Football</button>
+  <button mat-menu-item>Cricket</button>
+  <button mat-menu-item>Tennis</button>
+</mat-menu>
+
+
+<button mat-button [matMenuTriggerFor]="afterMenu">Fashion</button>
+<mat-menu #afterMenu="matMenu" xPosition="after">
+  <button mat-menu-item>Mens</button>
+  <button mat-menu-item>Womens</button>
+  <button mat-menu-item>Kids</button>
+</mat-menu>
+
